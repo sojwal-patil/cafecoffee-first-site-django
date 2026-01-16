@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Cafe Coffee</title>
+    <link rel="stylesheet" href="{% static "style.css" %}">
+  </head>
+  <body>
+    {%include "navbar.html"%}
+
+    <h1 class="second">Contact</h1>
+
+    <div class="contactform">
+      <form action="">
+        <label for="">Enter Your Name</label><br />
+        <input type="text" name="" id="text" placeholder="Joe Biden" /><br />
+        <label for="">Enter your email</label> <br />
+        <input type="email" name="" id="email" placeholder="joe@gmail.com" />
+        <br />
+        <label for="">Enter message</label> <br />
+        <input type="text" name="" id="text-big" placeholder="Message...." />
+        <br />
+        <input type="button" value="Submit" id="submit-btn" />
+      </form>
+    </div>
+  </body>
+</html>

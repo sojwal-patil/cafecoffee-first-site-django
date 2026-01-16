@@ -1,11 +1,32 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Coffee</title>
+    <link rel="stylesheet" href="{% static "style.css" %}">
+  </head>
+  <body>
     
-</body>
+    {%include "navbar.html" %}
+
+
+    {%include "product.html" %}
+
+    <h1 class="second">CafeCofee</h1>
+    <p class="second-p">
+      Café Coffee is a warm, welcoming space crafted for true coffee lovers.
+      Every cup here is brewed with care, using high-quality coffee beans that
+      bring out rich aroma, balanced flavor, and a smooth finish. From your
+      first sip to the last, the experience is all about authenticity, comfort,
+      and love for real coffee. <br />
+      Whether you’re stopping by for a quiet morning brew, an evening
+      conversation, or a refreshing break during the day, Café Coffee offers a
+      cozy ambience that feels like home. Simple, honest flavors, friendly
+      service, and the unmistakable smell of freshly brewed coffee make this
+      café a place you’ll want to return to again and again. ☕ <br />
+      Real coffee. Real moments. Authentic taste.
+    </p>
+  </body>
 </html>
